@@ -1,0 +1,76 @@
+.tbl {
+  width: 100%;
+
+  &__head {
+    background-color: #ccc;
+
+    &__th {
+      padding: 5px 10px;
+    }
+  }
+
+  &__row {
+    transition: "all 1s linear";
+  }
+
+  &__cell {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 5px;
+  border-top: 1px solid $primary;
+  padding: 10px;
+  margin-top: 20px;
+
+  &-item {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &.disabled {
+      background-color: rgba(0, 0, 0, 0.2);
+      cursor: not-allowed;
+      // pointer-events: none;
+    }
+
+
+
+    &.active {
+      background: $primary;
+      color: #fff;
+    }
+
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-block: 10px;
+  column-gap: 10px;
+
+  &__label {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  &__input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px 20px;
+  }
+}

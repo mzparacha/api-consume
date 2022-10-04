@@ -1,0 +1,28 @@
+.nav {
+  height: 60px;
+  padding: 10px;
+  list-style: none;
+  gap: 10px;
+  background-color: $primary;
+
+  &-link {
+    margin-top: auto;
+  }
+
+  &-link a {
+    padding: 10px 30px;
+    height: 100%;
+    margin-block: auto;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+
+    &.active {
+      background-color: rgba(0, 0, 0, .05);
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+}
